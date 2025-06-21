@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar HTML - Panduan Pemula</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+        
+        .section {
+            background: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-left: 5px solid #007bff;
+        }
+        
+        .code-example {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        
+        .output {
+            background: #e7f3ff;
+            border: 1px solid #b6d4fe;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+        
+        h1 {
+            color: #007bff;
+            text-align: center;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            color: #28a745;
+            border-bottom: 2px solid #28a745;
+            padding-bottom: 5px;
+        }
+        
+        h3 {
+            color: #dc3545;
+        }
+        
+        .highlight {
+            background-color: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        
+        .tag-explanation {
+            background: #f1f3f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            border-left: 4px solid #007bff;
+        }
+        
+        .navigation {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .navigation a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.2);
+            transition: background 0.3s;
+        }
+        
+        .navigation a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>🌟 Panduan Belajar HTML untuk Pemula</h1>
+    
+    <div class="navigation">
+        <strong>Menu Pembelajaran:</strong><br><br>
+        <a href="#struktur">Struktur Dasar</a>
+        <a href="#tag-dasar">Tag Dasar</a>
+        <a href="#text">Formatting Text</a>
+        <a href="#link">Link & Gambar</a>
+        <a href="#list">List</a>
+        <a href="#table">Tabel</a>
+    </div>
+
+    <!-- BAGIAN 1: APA ITU HTML -->
+    <div class="section">
+        <h2>📚 Apa itu HTML?</h2>
+        <p><strong>HTML</strong> adalah singkatan dari <strong>HyperText Markup Language</strong>.</p>
+        
+        <div class="highlight">
+            <strong>Penjelasan Sederhana:</strong><br>
+            HTML seperti kerangka rumah. Jika website adalah rumah, maka HTML adalah fondasi dan rangka yang menentukan struktur dasar halaman web.
+        </div>
+        
+        <p><strong>HTML menggunakan "tag" untuk memberi tahu browser:</strong></p>
+        <ul>
+            <li>Mana yang judul, mana yang paragraf</li>
+            <li>Bagaimana cara menampilkan gambar</li>
+            <li>Cara membuat link ke halaman lain</li>
+            <li>Dan masih banyak lagi!</li>
+        </ul>
+    </div>
+
+    <!-- BAGIAN 2: STRUKTUR DASAR -->
+    <div class="section" id="struktur">
+        <h2>🏗️ Struktur Dasar HTML</h2>
+        <p>Setiap halaman HTML memiliki struktur dasar yang sama:</p>
+        
+        <div class="code-example">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Judul Halaman&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;Selamat Datang&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </div>
+        
+        <h3>📝 Penjelasan Setiap Bagian:</h3>
+        
+        <div class="tag-explanation">
+            <strong>&lt;!DOCTYPE html&gt;</strong><br>
+            Memberitahu browser bahwa ini adalah dokumen HTML5
+        </div>
+        
+        <div class="tag-explanation">
+            <strong>&lt;html&gt;</strong><br>
+            Tag pembuka dan penutup untuk seluruh dokumen HTML
+        </div>
+        
+        <div class="tag-explanation">
+            <strong>&lt;head&gt;</strong><br>
+            Berisi informasi tentang halaman (tidak terlihat di browser)
+        </div>
+        
+        <div class="tag-explanation">
+            <strong>&lt;title&gt;</strong><br>
+            Judul yang muncul di tab browser
+        </div>
+        
+        <div class="tag-explanation">
+            <strong>&lt;body&gt;</strong><br>
+            Berisi semua konten yang terlihat di halaman web
+        </div>
+    </div>
+
+    <!-- BAGIAN 3: TAG DASAR -->
+    <div class="section" id="tag-dasar">
+        <h2>🏷️ Tag-Tag Dasar HTML</h2>
+        
+        <h3>Heading (Judul)</h3>
+        <div class="code-example">
+&lt;h1&gt;Judul Paling Besar&lt;/h1&gt;
+&lt;h2&gt;Judul Kedua&lt;/h2&gt;
+&lt;h3&gt;Judul Ketiga&lt;/h3&gt;
+&lt;h4&gt;Judul Keempat&lt;/h4&gt;
+&lt;h5&gt;Judul Kelima&lt;/h5&gt;
+&lt;h6&gt;Judul Terkecil&lt;/h6&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <h1 style="margin: 10px 0;">Judul Paling Besar</h1>
+            <h2 style="margin: 10px 0;">Judul Kedua</h2>
+            <h3 style="margin: 10px 0;">Judul Ketiga</h3>
+            <h4 style="margin: 10px 0;">Judul Keempat</h4>
+            <h5 style="margin: 10px 0;">Judul Kelima</h5>
+            <h6 style="margin: 10px 0;">Judul Terkecil</h6>
+        </div>
+        
+        <h3>Paragraf</h3>
+        <div class="code-example">
+&lt;p&gt;Ini adalah paragraf pertama.&lt;/p&gt;
+&lt;p&gt;Ini adalah paragraf kedua.&lt;/p&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <p>Ini adalah paragraf pertama.</p>
+            <p>Ini adalah paragraf kedua.</p>
+        </div>
+    </div>
+
+    <!-- BAGIAN 4: FORMATTING TEXT -->
+    <div class="section" id="text">
+        <h2>✏️ Memformat Teks</h2>
+        
+        <div class="code-example">
+&lt;p&gt;&lt;strong&gt;Teks tebal&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Teks miring&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;u&gt;Teks bergaris bawah&lt;/u&gt;&lt;/p&gt;
+&lt;p&gt;&lt;mark&gt;Teks yang disorot&lt;/mark&gt;&lt;/p&gt;
+&lt;p&gt;&lt;small&gt;Teks kecil&lt;/small&gt;&lt;/p&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <p><strong>Teks tebal</strong></p>
+            <p><em>Teks miring</em></p>
+            <p><u>Teks bergaris bawah</u></p>
+            <p><mark>Teks yang disorot</mark></p>
+            <p><small>Teks kecil</small></p>
+        </div>
+    </div>
+
+    <!-- BAGIAN 5: LINK DAN GAMBAR -->
+    <div class="section" id="link">
+        <h2>🔗 Link dan Gambar</h2>
+        
+        <h3>Membuat Link</h3>
+        <div class="code-example">
+&lt;a href="https://www.google.com"&gt;Kunjungi Google&lt;/a&gt;
+&lt;a href="https://www.google.com" target="_blank"&gt;Buka di tab baru&lt;/a&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <a href="https://www.google.com">Kunjungi Google</a><br>
+            <a href="https://www.google.com" target="_blank">Buka di tab baru</a>
+        </div>
+        
+        <h3>Menampilkan Gambar</h3>
+        <div class="code-example">
+&lt;img src="https://via.placeholder.com/200x100" alt="Contoh Gambar"&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <img src="https://via.placeholder.com/200x100" alt="Contoh Gambar">
+        </div>
+    </div>
+
+    <!-- BAGIAN 6: LIST -->
+    <div class="section" id="list">
+        <h2>📋 Membuat Daftar (List)</h2>
+        
+        <h3>Daftar Berurutan (Ordered List)</h3>
+        <div class="code-example">
+&lt;ol&gt;
+    &lt;li&gt;Langkah pertama&lt;/li&gt;
+    &lt;li&gt;Langkah kedua&lt;/li&gt;
+    &lt;li&gt;Langkah ketiga&lt;/li&gt;
+&lt;/ol&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong>
+            <ol>
+                <li>Langkah pertama</li>
+                <li>Langkah kedua</li>
+                <li>Langkah ketiga</li>
+            </ol>
+        </div>
+        
+        <h3>Daftar Tidak Berurutan (Unordered List)</h3>
+        <div class="code-example">
+&lt;ul&gt;
+    &lt;li&gt;Apel&lt;/li&gt;
+    &lt;li&gt;Jeruk&lt;/li&gt;
+    &lt;li&gt;Mangga&lt;/li&gt;
+&lt;/ul&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong>
+            <ul>
+                <li>Apel</li>
+                <li>Jeruk</li>
+                <li>Mangga</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- BAGIAN 7: TABEL -->
+    <div class="section" id="table">
+        <h2>📊 Membuat Tabel</h2>
+        
+        <div class="code-example">
+&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Nama&lt;/th&gt;
+        &lt;th&gt;Umur&lt;/th&gt;
+        &lt;th&gt;Kota&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Budi&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;Jakarta&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Sari&lt;/td&gt;
+        &lt;td&gt;23&lt;/td&gt;
+        &lt;td&gt;Bandung&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+        </div>
+        
+        <div class="output">
+            <strong>Hasilnya:</strong><br>
+            <table border="1" style="border-collapse: collapse; margin: 10px 0;">
+                <tr>
+                    <th style="padding: 8px; background: #f8f9fa;">Nama</th>
+                    <th style="padding: 8px; background: #f8f9fa;">Umur</th>
+                    <th style="padding: 8px; background: #f8f9fa;">Kota</th>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Budi</td>
+                    <td style="padding: 8px;">25</td>
+                    <td style="padding: 8px;">Jakarta</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px;">Sari</td>
+                    <td style="padding: 8px;">23</td>
+                    <td style="padding: 8px;">Bandung</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="highlight">
+            <strong>Penjelasan Tabel:</strong><br>
+            • <strong>&lt;table&gt;</strong> = Membuat tabel<br>
+            • <strong>&lt;tr&gt;</strong> = Baris tabel<br>
+            • <strong>&lt;th&gt;</strong> = Header tabel (tebal)<br>
+            • <strong>&lt;td&gt;</strong> = Sel data tabel
+        </div>
+    </div>
+
+    <!-- TIPS UNTUK PEMULA -->
+    <div class="section">
+        <h2>💡 Tips untuk Pemula</h2>
+        
+        <div class="highlight">
+            <strong>🎯 Tips Penting:</strong>
+            <ol>
+                <li><strong>Selalu tutup tag!</strong> Setiap tag yang dibuka harus ditutup (kecuali tag self-closing seperti &lt;img&gt;)</li>
+                <li><strong>Gunakan indentasi</strong> untuk membuat kode mudah dibaca</li>
+                <li><strong>Coba langsung!</strong> Buat file .html dan buka di browser</li>
+                <li><strong>Jangan takut salah</strong> - HTML sangat mudah diperbaiki</li>
+                <li><strong>Pelajari sedikit demi sedikit</strong> - tidak perlu terburu-buru</li>
+            </ol>
+        </div>
+        
+        <div class="tag-explanation">
+            <strong>🚀 Langkah Selanjutnya:</strong><br>
+            Setelah menguasai HTML dasar, Anda bisa lanjut belajar:
+            <ul>
+                <li><strong>CSS</strong> - untuk styling dan desain</li>
+                <li><strong>JavaScript</strong> - untuk interaktivitas</li>
+                <li><strong>Form HTML</strong> - untuk input data</li>
+            </ul>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0; padding: 20px; background: #e7f3ff; border-radius: 10px;">
+        <h2>🎉 Selamat!</h2>
+        <p>Anda telah mempelajari dasar-dasar HTML. Sekarang coba buat halaman HTML sendiri dan praktikkan apa yang sudah dipelajari!</p>
+    </div>
+
+</body>
+</html>
